@@ -5,8 +5,11 @@ class FizzBuzz:
             return 'FizzBuzz'
         elif self.__isDivisibleBy5(number):
             return 'Buzz'
-        else:
+        elif number % 3 == 0:
             return 'Fizz'
+        else:
+            return number
+
 
     def __isDivisibleBy5(self, number):
         return True if number % 5 == 0 else False
