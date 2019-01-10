@@ -15,5 +15,9 @@ class TestFizzBuzz(unittest.TestCase):
         fizzbuzz = FizzBuzz()
         self.assertEqual(fizzbuzz.says(15), 'FizzBuzz')
 
+    def test_returns_number_when_not_divisible_by_3_5_15(self):
+        fizzbuzz = FizzBuzz()
+        self.assertEqual(fizzbuzz.says(7), 7)
+
 if __name__ == '__main__':
     unittest.main()
