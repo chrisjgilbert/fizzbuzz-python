@@ -1,7 +1,9 @@
 class FizzBuzz:
 
     def says(self, number):
-        if self.__isDivisibleBy5(number):
+        if number % 15 == 0:
+            return 'FizzBuzz'
+        elif self.__isDivisibleBy5(number):
             return 'Buzz'
         else:
             return 'Fizz'
